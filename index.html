@@ -30,130 +30,145 @@
     <!-- Link to Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-gray-100 font-sans">
     <header class="bg-white shadow-md">
         <nav class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="text-xl font-bold text-gray-800">HardwareAI</div>
                 <div id="menu" class="hidden md:flex space-x-4">
-                    <a href="#benefits" class="text-gray-600 hover:text-gray-800">Benefits</a>
                     <a href="#features" class="text-gray-600 hover:text-gray-800">Features</a>
                     <a href="#how-it-works" class="text-gray-600 hover:text-gray-800">How It Works</a>
+                    <a href="#use-cases" class="text-gray-600 hover:text-gray-800">Use Cases</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a>
                 </div>
                 <button id="menu-toggle" class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero bg-blue-600 text-white py-20">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0">
-                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Revolutionize Your Hardware Manuals with AI</h1>
-                        <p class="text-xl mb-8">Create detailed, user-friendly manuals for your consumer hardware products with AI-powered insights and visuals.</p>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Empower Your Hardware with AI</h1>
+                        <p class="text-xl mb-8">Embed an AI chatbot into your hardware products to provide instant support for users and technicians.</p>
                         <a href="#contact" class="bg-white text-blue-600 py-2 px-6 rounded-full font-bold hover:bg-blue-100 transition duration-300">Get Started</a>
                     </div>
                     <div class="md:w-1/2">
-                        <img src="manual.jpeg" alt="Manual Sample" class="rounded-lg shadow-xl">
+                        <img src="manual.jpeg" alt="App Screenshot" class="rounded-lg shadow-xl">
                     </div>
                 </div>
             </div>
         </section>
+        
 
-        <!-- Benefits Section -->
-        <section id="benefits" class="py-20">
+        <section id="how-it-works" class="bg-gray-200 py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-8">Why Choose Our AI-Powered Manuals?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">Enhanced User Experience</h3>
-                        <p>Provide your customers with easy-to-follow, visually rich manuals that simplify setup and troubleshooting.</p>
+                <h2 class="text-3xl font-bold text-center mb-8">How It Works</h2>
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="md:w-1/4 mb-8 md:mb-0">
+                        <div class="bg-white p-6 rounded-full h-5 w-5 flex items-center justify-center mx-auto">
+                            <span class="text-4xl font-bold text-blue-600">1</span>
+                        </div>
+                        <img src="public/screenshot.png" alt="Upload your technical documents" class="mx-auto mt-4 h-1/2 w-1/2 object-cover">
+                        <p class="text-center mt-4">Upload your technical documents</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">Reduced Support Costs</h3>
-                        <p>Decrease the number of support calls by offering comprehensive, self-service guides.</p>
+                    <div class="md:w-1/4 mb-8 md:mb-0">
+                        <div class="bg-white p-6 rounded-full h-5 w-5 flex items-center justify-center mx-auto">
+                            <span class="text-4xl font-bold text-blue-600">2</span>
+                        </div>
+                        <img src="public/screenshot.png" alt="AI processes the information" class="mx-auto mt-4 h-1/2 w-1/2 object-cover">
+                        <p class="text-center mt-4">Our AI processes the information</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">Faster Time to Market</h3>
-                        <p>Automate manual creation to speed up product releases and updates.</p>
+                    <div class="md:w-1/4 mb-8 md:mb-0">
+                        <div class="bg-white p-6 rounded-full h-5 w-5 flex items-center justify-center mx-auto">
+                            <span class="text-4xl font-bold text-blue-600">3</span>
+                        </div>
+                        <img src="public/screenshot.png" alt="Generate QR code for your hardware" class="mx-auto mt-4 h-1/2 w-1/2 object-cover">
+                        <p class="text-center mt-4">Generate QR code for your hardware</p>
+                    </div>
+                    <div class="md:w-1/4">
+                        <div class="bg-white p-6 rounded-full h-5 w-5 flex items-center justify-center mx-auto">
+                            <span class="text-4xl font-bold text-blue-600">4</span>
+                        </div>
+                        <img src="public/screenshot.png" alt="Users scan and get instant support" class="mx-auto mt-4 h-1/2 w-1/2 object-cover">
+                        <p class="text-center mt-4">Users scan and get instant support</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Features Section -->
-        <section id="features" class="bg-gray-200 py-20">
+        
+        <section id="features" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">Visual Integration</h3>
-                        <p>Incorporate diagrams, images, and videos directly into your manuals for better clarity.</p>
+                        <h3 class="font-bold text-xl mb-4">QR Code Integration</h3>
+                        <p>Easily embed AI support into your hardware with a simple QR code.</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">Interactive QR Codes</h3>
-                        <p>Generate QR codes that link to interactive guides and tutorials for additional support.</p>
+                        <h3 class="font-bold text-xl mb-4">AI-Generated Guides</h3>
+                        <p>Automatically create fixing guides based on your technical documentation.</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="font-bold text-xl mb-4">AI-Generated Instructions</h3>
-                        <p>Create precise, step-by-step instructions from your technical documents automatically.</p>
+                        <h3 class="font-bold text-xl mb-4">24/7 Support</h3>
+                        <p>Provide round-the-clock assistance to your customers and technicians.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Customizable Interface</h3>
+                        <p>Tailor the AI interface to match your brand and user needs.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Multi-Language Support</h3>
+                        <p>Offer support in multiple languages to reach a global audience.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Analytics Dashboard</h3>
+                        <p>Monitor usage and performance with detailed analytics.</p>
                     </div>
                 </div>
             </div>
         </section>
+         
 
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="py-20">
+        <section id="use-cases" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-8">How It Works</h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-                    <div class="flex flex-col items-center">
-                        <div class="bg-blue-600 text-white rounded-full h-16 w-16 flex items-center justify-center mb-4">1</div>
-                        <p>Upload your technical documents</p>
+                <h2 class="text-3xl font-bold text-center mb-8">Who Can Benefit?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Startups</h3>
+                        <p>New hardware and IoT device startups can leverage AI to offer exceptional customer support from day one.</p>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-blue-600 text-white rounded-full h-16 w-16 flex items-center justify-center mb-4">2</div>
-                        <p>AI processes the information</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Established Manufacturers</h3>
+                        <p>Large electronics manufacturers can integrate AI for efficient support and troubleshooting, reducing downtime and costs.</p>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-blue-600 text-white rounded-full h-16 w-16 flex items-center justify-center mb-4">3</div>
-                        <p>Generate a comprehensive manual</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Repair Services</h3>
+                        <p>Independent repair shops and authorized service centers can access detailed guides and troubleshooting steps instantly.</p>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class="bg-blue-600 text-white rounded-full h-16 w-16 flex items-center justify-center mb-4">4</div>
-                        <p>Users access via QR code</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Retailers</h3>
+                        <p>Retail chains offering repair services can enhance customer satisfaction by providing immediate support through AI.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Support Providers</h3>
+                        <p>Technical support and call centers can offer accurate and quick resolutions, improving customer experience.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-4">Educational Institutions</h3>
+                        <p>Technical schools and vocational training centers can use AI to teach students with up-to-date repair and maintenance guides.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-gray-200 py-20">
+        <section id="contact" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
-                <form class="max-w-lg mx-auto">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-                        <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-                        <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-                        <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded-full font-bold hover:bg-blue-700 transition duration-300">Send Message</button>
-                </form>
             </div>
         </section>
     </main>
@@ -163,15 +178,23 @@
             <p>&copy; 2024 HardwareAI. All rights reserved.</p>
         </div>
     </footer>
+</body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-        });
-    </script>
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-16');
+        menu.classList.toggle('left-0');
+        menu.classList.toggle('right-0');
+        menu.classList.toggle('bg-white');
+        menu.classList.toggle('shadow-md');
+        menu.classList.toggle('py-2');
+    });
+</script>
 </body>
 </html>
